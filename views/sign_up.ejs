@@ -1,0 +1,25 @@
+<body style="background:  linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);"></body>
+<h1><p style="text-align: center;" id="sign-up-type"></p></h1>
+
+<form style="background-color: transparent;border-radius: 20px;height: 55vh;width: 50vw;display: block;position: absolute;left: 30%;" action="/users/create"  method="POST">
+    <input style="width: 75%;height:20%;background-color: transparent;border: 1px solid transparent;border-bottom-width:1px;border-bottom-style: solid;border-bottom-color: transparent;border-bottom: 1px solid #d3d38a;" type="name" name="name" placeholder="Your Name"  required>
+    <input style="width: 75%;height:20%;background-color: transparent;border: 1px solid transparent;border-bottom-width:1px;border-bottom-style: solid;border-bottom-color: transparent;border-bottom: 1px solid #d3d38a;" type="email" name="email" placeholder="Your Email"  required>
+    <input style="width: 75%;height:20%;background-color: transparent;border: 1px solid transparent;border-bottom-width:1px;border-bottom-style: solid;border-bottom-color: transparent;border-bottom: 1px solid #d3d38a;" type="password" name="password" placeholder="Enter Password" required>
+    <input style="width: 75%;height:20%;background-color: transparent;border: 1px solid transparent;border-bottom-width:1px;border-bottom-style: solid;border-bottom-color: transparent;border-bottom: 1px solid #d3d38a;" type="password" name="confirmPassword" placeholder="Confirm Password" required>
+    <input style="width: 75%;height:20%;background-color: transparent;border: 1px solid transparent;border-bottom-width:1px;border-bottom-style: solid;border-bottom-color: transparent;border-bottom: 1px solid #d3d38a;"  type="submit"  value="Sign In">
+</form><a style="position: relative;top: 59vh;display: flex;justify-content: center;" href="/users/auth/google">GOOGLE LOGIN</a>
+<script>
+    var i = 0;
+    var txt = 'Welcome To Habit Tracker Kindly First Do SignUp.';
+    var speed = 70;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("sign-up-type").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    typeWriter()
+    </script>
+    </body>

@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-image: url('../images/homeBackground.jpg'); */
+}
+
+/* The body of the page, is always going to change, as it is mentioned earlier also, that navBar is 
+going to be constant.
+ For this project, I only have two types of body, one is home, and another is signUp/ SignIn page */
+ 
+ /* This is home Page */
+
+body{
+    /* background-image: linear-gradient(90deg , rgb(165, 165, 44), rgb(37, 119, 37), rgb(110, 228, 110)); */
+    /* background-position: center; */
+    background-image: url('https://image.slidesdocs.com/responsive-images/background/nature-blue-colorful-golden-rich-water-powerpoint-background_2712ea8387__960_540.jpg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* It is for quotes */
+.qutos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Quotes h1 tag  */
+.qutos h1{
+    font-size: 30px;
+    margin:6px 10px;
+    border: 1px solid #f6f8f0;
+    padding:0px 10px;
+    background-color: #efa2117a;
+}
+
+.qutos p {
+    color: #650f0f;
+  }
+
+/* This styling is for the input which is ther in home page. */
+#input{ 
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.input-form input{
+    width: 50vw;
+    height: 35px;
+    padding-left: 20px;
+    outline: none;
+    border: 1px solid #02005f7a;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: transparent;
+}
+/* These styling are for form-buttons which will allow the user to submit the new habit
+ */
+#form-btn{
+    padding: 6px 10px;
+    margin-left: 10px;
+    font-weight: 656;
+    color: #817d7d;
+    background-color: transparent;
+    height: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+#symbol{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+#weekly , #hourly , #daily{
+    padding: 0.7vw;
+    background-color: transparent;
+    margin: 1vw;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 11px;
+    font-size: 1.5vw;
+ }
+ #weekly:hover ,#daily:hover, #hourly:hover{
+     background-color: #8088527a;
+ }
+ #weekly-view__btn-2{
+      border-radius:15px 0 0 15px;
+ }
+
+ /* These list is for the habit_list, it will disply the habit and habit in weekly form */
+.habit-list{
+    display: flex;
+    height: 55vh;
+    overflow-x: scroll;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    padding: 10px;
+}
+/* Provided the basic funcitonality of habit_list */
+.habit-list::-webkit-scrollbar{
+    display: none;
+}
+/* These styling is for the item in habit List */
+.habit-list-item{
+   background-color: #ea28287a;
+   width: 650px;
+   height: 70px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 20px;
+   border: 1px solid #b0d635;
+   position: relative;
+}
+/* From here the styling are of small things, which are needed to be adjusted, in the habit_list */
+a{
+    text-decoration: none;
+}
+.habit-list-item-name{
+    color: whitesmoke;
+}
+.remove{
+    color: red;
+    margin-left: 5px;
+}
+.favorite{
+    color: rgb(255, 0, 170);
+}
+.fas{
+    font-size: 30px;
+}
+.fa-check-circle{
+    color: rgb(4, 252, 4);
+}
+.fa-times-circle{
+    color: rgb(201, 4, 4);
+}
+.fa-minus-circle{
+   color: gold; 
+}
+
+/* These containser are for showing the habit, 7days record */
+.weekly__container {
+    width: 650px;
+    border: 1px solid #573030;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+/* In the weekly_container you can see the date, here is the stying for that date */
+.weekly__date{
+    width: 80px;
+    height: 80px;
+    background-color: #2ba18375;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weekly__date p{
+    font-size: 12px;
+    position: relative;
+    color:#fff;
+    top: -10px;
+}
+.with-weekly{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

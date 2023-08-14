@@ -1,0 +1,12 @@
+body{
+    background:  linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+/* The concept for the desigin the sing-in/sign-up/forget_password page was of giveing the disply as flex */
+/* Then arranged it as accordingly. For achiving the purpose I have made one outerForm, and inside it one inner form 
+    This can be done in many ways, but at time of making, this is what it come to my mind.*/
+form{
+    background-color: transparent;border-radius: 20px;height: 55vh;width: 50vw;display: block;position: absolute;left: 25%;
+}
+input{
+    width: 75%;height:20%;background-color: transparent;border: 1px solid transparent;border-bottom-width:1px;border-bottom-style: solid;border-bottom-color: transparent;border-bottom: 1px solid #d3d38a;
+}
