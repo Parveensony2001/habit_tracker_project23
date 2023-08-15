@@ -1,7 +1,5 @@
-const http = require('http');
-const express = require('express'); // requeiring express
+const express = require('express'); 
 const bodyParser = require('body-parser');
-const port =  8000; // assigning the port, for running in local computer
 const expressLayout=require('express-ejs-layouts');
 const app = express();
 // require the connect flash, to show the notification in flash msgs
@@ -28,7 +26,7 @@ app.use(express.static('./assets'));
 
 //mongo store is used to store the session cookie
 app.use(session({
-    name: 'codeial',
+    name: 'habit traker',
     // TODO change the secret before deployment in production mode
     secret: "habitTracker",
     saveUninitialized: false,
@@ -50,10 +48,7 @@ app.use(flashMiddleWare.setFlash);
 app.use('/' , require('./routes/index')); // middleware for router
 
 // directing the app in the given port
-app.listen(port, function(err){
-    if(err){
-        console.log(err );
-        return ;
-    }
-    console.log(`Server is up and running in port ${port}`);
+app.listen(8000, function(err){
+    if(err)  console.log(`Server is not running in port : 8000`);
+    console.log(`Server is up and running in port : 8000`);
 })
